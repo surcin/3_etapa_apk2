@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1> Peça seu sorvete  </h1>
+
+
+        <form name="sorv" >
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu Nome" required>
+    
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+    
+            <label for="email">Endereço</label>
+            <input type="text" name="endereço" id="endereço" placeholder="Rua Felicidade, 861 casa 31" required>
+
+
+            <section class="sorvetes">
+                <div class="imagem" onmouseover="trocar('Sorvete de morango', 'Nosso sorvete de morango é uma combinação irresistível de morangos frescos e uma textura cremosa, oferecendo um sabor autêntico e refrescante que remete aos dias ensolarados de verão.')"><img src="img/sorvete-morango.png" alt=""></div>
+
+                <div class="imagem" onmouseover="trocar('Sorvete napolitano', 'Nosso sorvete napolitano combina três sabores clássicos: cremoso chocolate, baunilha suave e morango refrescante. Cada camada oferece uma experiência única, perfeita para agradar a todos os paladares em uma só porção.')"><img src="img/sorvete-napolitano.png" alt=""></div>
+
+                
+                <div class="imagem" onmouseover="trocar('Sorvete de chocolate', 'Nosso sorvete de chocolate é uma indulgência cremosa e rica, feita com cacau de alta qualidade. Cada colherada oferece um sabor intenso e decadente, perfeito para os amantes de chocolate.')"><img src="img/sorvete-chocolate.png" alt=""></div>
+                
+                <div class="imagem" onmouseover="trocar('Sorvete de uva', 'Nosso sorvete de uva é uma experiência refrescante, feita com suculentas uvas selecionadas. Com um sabor doce e frutado, e uma textura cremosa, é a escolha perfeita para os amantes de sabores naturais e frescos.')"><img src="img/sorvete-uva.png" alt=""></div>
+
+                <div class="imagem" onmouseover="trocar('Sorvete de flocos', 'Nosso sorvete de flocos é uma delícia clássica, feito com ingredientes de alta qualidade para uma textura incrivelmente suave e cremosa. Com um sabor delicado e refinado, é perfeito para ser apreciado sozinho ou como base para outras sobremesas.')"><img src="img/sorvete-flocos.png" alt=""></div>
+
+            </section>
+            
+            <div class="desc">
+                <output id="desc" > Sabor:</output>
+            </div>
+    
+        
+            <div id="sabores">
+                <label for="sabores">Sabores:</label>
+                <input type="checkbox" name="morango" id="morango" onchange="soma(7,this.checked)"> Morango
+                <input type="checkbox" name="napolitano" id="napolitano" onchange="soma(12,this.checked)"> Napolitano
+                <input type="checkbox" name="chocolate" id="chocolates" onchange="soma(9,this.checked)"> Chocolate
+                <input type="checkbox" name="uva" id="uva" onchange="soma(13,this.checked)"> Uva
+                <input type="checkbox" name="creme" id="creme" onchange="soma(5,this.checked)"> Flocos
+            </div>
+    
+
+
+
+            <p id="saida">
+                R$ <output id="total"> 0 </output>
+            </p>
+        </form>
+        
+        <div id="resultado">
+            <button type="reset">Limpar </button>
+            <button type="submit">Enviar </button>
+            
+        </div>
+   
+   
+   
+   
+   
+   
+         <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </main>
+</body>
+</html>

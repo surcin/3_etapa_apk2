@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(7, 7, 56);
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #sabores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    
+  }
+  
+  label {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="tel"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .sorvetes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .imagem {
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .imagem img {
+    width: 100px;
+    height: 100px;
+    
+    object-fit: cover;
+  }
+  
+  .imagem:hover {
+    transform: scale(1.1);
+  }
+  
+  .desc {
+    margin-top: 20px;
+  }
+  
+  #desc {
+    font-weight: bold;
+  }
+  
+  #saida {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  #resultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 1em;
+  }
+  
+  button[type="reset"],
+  button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button[type="reset"]:hover,
+  button[type="submit"]:hover {
+    background-color: #3c723e;
+    
+  }
+
+    input[type='checkbox']{
+    width: 0.8em;
+    margin-left: 0.7em;
+    font-size: 1.5em;
+}
